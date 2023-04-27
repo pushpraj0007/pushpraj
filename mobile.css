@@ -1,0 +1,58 @@
+@media (max-width: 768px) {
+
+    #menu-icon {
+        display: block;
+    }
+
+    #darkMode-icon{
+        position: absolute;
+        right: 7rem;
+        font-size: 2.6rem;
+        color: var(--text-color);
+        margin-bottom: .1rem;
+    }
+    .bx-menu{
+        display: block;
+    }
+   .navbar li{
+    display: none;
+   }
+    .nav-ul{
+        display: block;
+        background-color: rebeccapurple;
+        width: 100%;
+        position: relative;
+        right: 350px;
+        top: 165px;
+    }
+    .nav-ul li{
+        list-style: none;
+        padding: 1rem;
+    }
+    .nav-ul li a{
+        font-size: 1.5rem;
+        color: white;
+    }
+    .header{
+        /* width: 100%; */
+        /* background-color: #0000f0; */
+        border-bottom: 2px solid black;
+        height: 100px;
+        z-index: 100;
+    }
+    .protfolio{
+       display: flex;
+       flex-wrap: nowrap;
+        
+    }
+    .home{
+        display: none;
+    }
+    .navbav.active{
+        display: block;
+    }
+  
+    
+   
+  
+}
