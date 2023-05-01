@@ -10,49 +10,151 @@
         font-size: 2.6rem;
         color: var(--text-color);
         margin-bottom: .1rem;
+        display: none;
     }
     .bx-menu{
         display: block;
     }
-   .navbar li{
+   .navbar{
     display: none;
+    position: absolute;
+    top: 0;
+    
    }
-    .nav-ul{
+    .navbar ul{
         display: block;
         background-color: rebeccapurple;
         width: 100%;
         position: relative;
-        right: 350px;
-        top: 165px;
+        top: 105px;
+        right: 1rem;
+        height: 80vh;
+        z-index: 999;
+        text-align: center;
+        padding-top: 20px;
+        
+       
     }
-    .nav-ul li{
+    .navbar ul li{
         list-style: none;
         padding: 1rem;
+        line-height: 3rem;
     }
-    .nav-ul li a{
+    .navbar li a{
         font-size: 1.5rem;
         color: white;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        /* padding: 1rem; */
+    }
+    .navbar.nav-ic{
+        display: block;
+        
+    }
+    .nav-ic{
+        width: 50%;
     }
     .header{
         /* width: 100%; */
         /* background-color: #0000f0; */
-        border-bottom: 2px solid black;
+        /* border-bottom: 2px solid black; */
+        box-shadow: 0 0 20px black;
         height: 100px;
-        z-index: 100;
+        z-index: 999;
     }
-    .protfolio{
-       display: flex;
-       flex-wrap: nowrap;
-        
-    }
-    .home{
+    .i-1{
         display: none;
     }
-    .navbav.active{
-        display: block;
-    }
-  
     
+    }
+    .protfolio{
+        width: 100%;
+        height: auto;
+        padding-bottom: 50px;
+    }
+    .protfolio-box p{
+        margin-left: 1rem;
+        margin-right: 1rem;
+        font-size: 1rem;
+    }
+    .protfolio-box h3{
+        font-size: 1.6rem;
+       
+    }
+    .protfolio-container{
+       width: 100%;
+       
+      
+    }
+    .protfolio-box i{
+        font-size: 3rem;
+        margin-top: 2rem;
+        margin-left: 5rem;
+        
+    }
+    .protfolio-container .protfolio-box{
+        width: 48%;
+    }
+    .protfolio-box{
+        
+        margin: 0px;
+        margin-bottom: 10px;
+        height: 30vh;
+        padding-bottom: 10px;
+    }
+    /* home-content */
+    .home{
+        display: block;
+        height: auto;
+        padding-bottom: 50px;
+    }
+    .home-content{
+        margin-top: 100px;
+    }
+.profession-container{
+
+    display: none;
+}
+
+/* about */
+.about{
+    margin-top: -350px;
+    display: block;
+}
+.about-content{
+    flex-basis: 100%;
+}
+.about-img img{
+    width: 100%;
+}
+.about-img{
+    width: 100%;
+    margin-top: -10rem;
+}
+    /* education  */
+   .education-container{
+    width: 100%;
+   } 
    
-  
+  /* services */
+  .service{
+    margin-left:1rem;
+    
+  }
+  .service-box{
+    margin: 1rem;
+  }
+
+/* address */
+.contact-box-left{
+    margin-left: -1rem;
+}
+.contact-box{
+    margin-left: -5rem;
+}
+
+
+  /* footer */
+  .footer{
+    width: 100%;
+  }
 }

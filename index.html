@@ -19,8 +19,8 @@
 <body>
     <header class="header">
         <a href="#" class="logo">.Pushpraj</a>
-        <nav class="navbar">
-            <ul class="nav-ul navbar">
+        <nav class="navbar" >
+            <ul>
                 <li><a href="#home" class="active">HOME</a></li>
                 <li> <a href="#about">ABOUT</a></li>
                 <li><a href="#service">SKILLs</a></li>
@@ -29,9 +29,9 @@
             </ul>
         
         </nav>
-        <div class="bx bx-moon" id="darkMode-icon"></div>
+        <div class="bx bx-moon" id="darkMode-icon" onclick="showMenu()"></div>
         <div class="bx bx-menu" id="menu-icon"></div>
-        <!-- <div class="cancel"><i class='bx bx-x'></i></div> -->
+        <div id="cancel"><i class='bx bx-x'></i></div>
 
     </header>
 
@@ -51,7 +51,10 @@
 
             <a href="#" class="btn">Follow Me</a>
         </div>
-        <div class="profession-container">
+        <div class=" i-1">
+            <img src="pushprajProfiledw.jpeg" alt="">
+        </div>
+        <!-- <div class="profession-container">
             <div class="profession-box">
                 <div class="profession" style="--i:0;">
                     <i class='bx bx-code-alt'></i>
@@ -74,7 +77,7 @@
             </div>
 
             <div class="overlay"></div>
-        </div>
+        </div> -->
         <div class="home-img">
             <!-- <img src="IMG_20220106_205014_928-removebg-preview.png" Salt="">s -->
         </div>
@@ -88,9 +91,9 @@
         <div class="about-content">
             <h2 class="heading">About <span>Me</span></h2>
             <h3>I am <span>Pushpraj Chaudhary</span>, an Informative and Software Engineer.</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quo accusamus? Suscipit iusto id quos
-                ipsa totam non nisi maxime pariatur sunt, reprehenderit nulla laboriosam quae, quaerat expedita eius
-                nesciunt veniam modi atque quis cum provident. Pariatur ullam quod hic.</p>
+            <p> I am proficient in hardware design, software development, and system architecture, with expertise in areas such as computer architecture, digital circuits, embedded systems, and programming languages like C++, Python, and Java.
+                With my background in system architecture, I can design and implement efficient and scalable systems that meet the requirements of modern businesses. I have experience in cloud-based technologies, including containerization and orchestration technologies like Docker and Kubernetes, and have designed and deployed cloud-based solutions.
+            </p>
             <a href="#" class="btn">Read More</a>
         </div>
 
@@ -166,8 +169,7 @@
                 <h3>Flight Management System</h3>
                 <p>A Flight Management System (FMS) is an on-board multi-purpose navigation, performance, and aircraft
                     operations computer designed to provide virtual data and operational harmony between closed and open
-                    elements associated with a flight from pre-engine start and take-off, to landing and engine
-                    shut-down.</p>
+                    elements associated with a flight from pre-engine start and take-off, .</p>
                 <a href="#"><i class='bx bx-link-external'></i></a>
             </div>
             <div class="protfolio-box">
@@ -185,10 +187,7 @@
             </div>
             <div class="protfolio-box">
                 <h3>Flood Prediction using Machine Learning</h3>
-                <p>Floods are among the most destructive natural disasters, which are highly complex to model. The
-                    research on the advancement of flood prediction models contributed to risk reduction, policy
-                    suggestion, minimization of the loss of human life, and reduction of the property damage associated
-                    with floods.</p>
+                <p>Floods are among the most destructive natural disasters, which are highly complex to model.</p>
                 <a href="#"><i class='bx bx-link-external'></i></a>
             </div>
         </div>
@@ -247,7 +246,7 @@
 
     <!-------Js scripts-->
 
-    <!-- <script src="script.js"></script> -->
+    <script src="script.js"></script>
 </body>
 
 </html>
