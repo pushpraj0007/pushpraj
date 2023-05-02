@@ -4,24 +4,26 @@
         display: block;
     }
 
-    #darkMode-icon{
+    #darkMode-icon {
         position: absolute;
         right: 7rem;
         font-size: 2.6rem;
         color: var(--text-color);
         margin-bottom: .1rem;
-        display: none;
     }
-    .bx-menu{
+
+    .bx-menu {
         display: block;
     }
-   .navbar{
-    display: none;
-    position: absolute;
-    top: 0;
-    
-   }
-    .navbar ul{
+
+    .navbar {
+        display: none;
+        position: absolute;
+        top: 0;
+
+    }
+
+    .navbar ul {
         display: block;
         background-color: rebeccapurple;
         width: 100%;
@@ -32,28 +34,33 @@
         z-index: 999;
         text-align: center;
         padding-top: 20px;
-        
-       
+
+
     }
-    .navbar ul li{
+
+    .navbar ul li {
         list-style: none;
         padding: 1rem;
         line-height: 3rem;
     }
-    .navbar li a{
+
+    .navbar li a {
         font-size: 1.5rem;
         color: white;
         font-family: Georgia, 'Times New Roman', Times, serif;
         /* padding: 1rem; */
     }
-    .navbar.nav-ic{
+
+    .navbar.nav-ic {
         display: block;
-        
+
     }
-    .nav-ic{
+
+    .nav-ic {
         width: 50%;
     }
-    .header{
+
+    .header {
         /* width: 100%; */
         /* background-color: #0000f0; */
         /* border-bottom: 2px solid black; */
@@ -61,100 +68,139 @@
         height: 100px;
         z-index: 999;
     }
-    .i-1{
+
+    .i-1 {
         display: none;
     }
-    
-    }
-    .protfolio{
+
+
+    .protfolio {
         width: 100%;
         height: auto;
         padding-bottom: 50px;
     }
-    .protfolio-box p{
+
+    .protfolio-box p {
         margin-left: 1rem;
         margin-right: 1rem;
         font-size: 1rem;
     }
-    .protfolio-box h3{
+
+    .protfolio-box h3 {
         font-size: 1.6rem;
-       
+
     }
-    .protfolio-container{
-       width: 100%;
-       
-      
+
+    .protfolio-container {
+        width: 100%;
+
+
     }
-    .protfolio-box i{
+
+    .protfolio-box i {
         font-size: 3rem;
         margin-top: 2rem;
         margin-left: 5rem;
-        
+
     }
-    .protfolio-container .protfolio-box{
+
+    .protfolio-container .protfolio-box {
         width: 48%;
     }
-    .protfolio-box{
-        
+
+    .protfolio-box {
+
         margin: 0px;
         margin-bottom: 10px;
         height: 30vh;
         padding-bottom: 10px;
     }
+
     /* home-content */
-    .home{
+    .home {
         display: block;
         height: auto;
         padding-bottom: 50px;
     }
-    .home-content{
+
+    .home-content {
         margin-top: 100px;
     }
-.profession-container{
 
-    display: none;
-}
+    .home .home-content {
+        max-width: 100%;
+    }
 
-/* about */
-.about{
-    margin-top: -350px;
-    display: block;
-}
-.about-content{
-    flex-basis: 100%;
-}
-.about-img img{
-    width: 100%;
-}
-.about-img{
-    width: 100%;
-    margin-top: -10rem;
-}
+    .home-content h1 {
+        width: auto;
+        font-size: 3.2rem;
+    }
+
+    .profession-container {
+
+        display: none;
+    }
+
+    .home-content h5 {
+        margin-bottom: 10px;
+    }
+
+    /* about */
+    .about {
+        margin-top: -350px;
+        display: block;
+    }
+
+    .about-content {
+        flex-basis: 100%;
+    }
+
+    .about-img img {
+        width: 100%;
+        margin-top: -12rem;
+    }
+
+    .about-img {
+        width: 100%;
+        margin-top: -10rem;
+    }
+
     /* education  */
-   .education-container{
-    width: 100%;
-   } 
-   
-  /* services */
-  .service{
-    margin-left:1rem;
-    
-  }
-  .service-box{
-    margin: 1rem;
-  }
+    .education-container {
+        width: 100%;
+    }
 
-/* address */
-.contact-box-left{
-    margin-left: -1rem;
-}
-.contact-box{
-    margin-left: -5rem;
-}
+    .education-content {
+        margin-bottom: 5rem;
+    }
+
+    /* services */
+    .service {
+        margin-left: 1rem;
+
+    }
+
+    .service-box {
+        margin: 1rem;
+    }
+
+    /* address */
+    .contact-box-left {
+        margin-left: -1rem;
+    }
+
+    .contact-box {
+        margin-left: -5rem;
+    }
+
+    .contact-box-right{
+        margin-top: 5rem;
+        margin-left: 5rem;
+    }
 
 
-  /* footer */
-  .footer{
-    width: 100%;
-  }
+    /* footer */
+    .footer {
+        width: 100%;
+    }
 }

@@ -46,3 +46,11 @@ window.onscroll = () => {
     navbar.classList.remove('nav-ic');
 
 };
+
+/*===== sticky header ======*/
+let darkModeIcon = document.querySelector('#darkMode-icon');
+
+darkModeIcon.onclick = () => {
+    darkModeIcon.classList.toggle('bx-sun');
+    document.body.classList.toggle('dark-mode');
+};

@@ -18,6 +18,12 @@
     --shadow-color: rgba(0,0,0,0.2);
 }
 
+.dark-mode {
+    --bg-color: #0b061f;
+    --text-color: #fdfdfd;
+    --shadow-color: rgb(197, 197, 197);
+}
+
 html{
     font-size: 62.5%;
     overflow-x: hidden;
@@ -28,8 +34,12 @@ body{
     color: var(--text-color);
 }
 
+p{
+    text-align: justify;
+}
+
 .header{
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
@@ -37,8 +47,7 @@ body{
     background: transparent;
     display: flex;
     align-items: center;
-    z-index: 999;
-    transition: .5s;
+    z-index: 100;
     /* border-bottom: 2px solid black; */
     /* background-color: #f8f8f8; */
     box-shadow: 0 0 20px rgb(197, 197, 197);
@@ -62,19 +71,7 @@ body{
     margin-left: 200px;
    
 }
-.i-1{
-    position: relative;
-    left: 30%;
-    width: 30%;
-   z-index: -1;
 
- 
-}
-.i-1 img{
-    width: 100%;
-    border-radius: 50px;
-    box-shadow: 0 0 20px rgb(28, 26, 26);
-}
 .navbar li{
     list-style: none;
     padding: 1rem;
@@ -88,14 +85,14 @@ body{
     font-size: 2.5rem;
     color: var(--main-color);
     font-weight: 600;
-    cursor: default;
+    cursor: pointer;
     margin-right: auto;
 }
 
 .navbar li a{
     position: relative;
     font-size: 1.7rem;
-    color: var(--white-color);
+    color: var(--text-color);
     font-weight: 500;
     margin-right: 3.5rem;
 }
@@ -125,7 +122,7 @@ body{
 
 #darkMode-icon{
     font-size: 2.4rem;
-    color: var(--white-color);
+    color: var(--text-color);
     cursor: pointer;
 }
 
@@ -144,7 +141,7 @@ body{
 
 section{
     min-height: 100vh;
-    padding: 10rem 7% 2rem;
+    padding: 0rem 7% 2rem;
 }
 
 .home{
@@ -153,37 +150,41 @@ section{
 }
 
 .home .home-content{
-    max-width: 44rem;
+    max-width: 60%;
 }
 
-.home-content h3{
-    font-size: 3rem;
-    font-weight: 500;
+.home-content h5{
+    font-size: 2.3rem;
+    font-family: cursive;
     line-height: .3;
+    font-weight: 100;
 }
 
 .home-content h1{
-    font-size: 4.2rem;
+    font-size: 3rem;
     font-weight: 500;
     margin-right: .3rem;
+    margin-top: 10px;
 }
 
 .home-content p{
-    font-size: 2rem;
+    font-size: 1.6rem;
 }
 
-.home-content p span{
+.home-content h1{
     position: relative;
+    color: #754ef9;
+    width: 46%;
 }
 
-.home-content p span::after{
+.home-content h1::after{
     content: "";
     position: absolute;
     left: 0;
     height: 100%;
-    width: 50%;
+    width: 100%;
     border-left: 1.5px solid var(--main-color);
-    animation: typing 2s steps(12) infinite;
+    animation: typing 2s steps(19) infinite;
     background: var(--bg-color);
 }
 
@@ -233,6 +234,20 @@ section{
     background: transparent;
     color: var(--main-color);
     border-color: var(--main-color);
+}
+
+.i-1{
+    position: relative;
+    left: 10%;
+    width: 27%;
+    z-index: -1;
+
+ 
+}
+.i-1 img{
+    width: 100%;
+    border-radius: 50px;
+    box-shadow: 0 0 50px var(--shadow-color);
 }
 
 .home .profession-container{
@@ -372,7 +387,7 @@ span{
 
 .education-container{
     width: 90%;
-    margin-top: 70px;
+    margin-top: 10rem;
 }
 
 .education-container h1{
@@ -402,6 +417,11 @@ span{
 
 .education-content p{
     font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.education-content p i{
+    font-size: 15px;
 }
 
 .education-content i{
@@ -418,7 +438,8 @@ span{
 }
 
 .service h2{
-    margin-bottom: 5rem;
+    margin-top: 10rem;
+    margin-bottom: 7rem;
     justify-content: center;
     text-align: center;
 }
@@ -436,7 +457,7 @@ span{
     background: var(--bg-color);
     padding: 3rem 2rem 4rem;
     border-radius: 2rem;
-    box-shadow: 0 .1rem .5rem var(--shadow-color);
+    box-shadow: 0 0 2rem rgba(71, 71, 71, 0.5);
     text-align: center;
     border-top: .6rem solid var(--main-color);
     border-bottom: .6rem solid var(--main-color);
@@ -469,6 +490,7 @@ span{
 }
 
 .protfolio h2{
+    margin-top: 10rem;
     margin-bottom: 7rem;
     justify-content: center;
     text-align: center;
@@ -493,11 +515,11 @@ span{
 .protfolio-container .protfolio-box{
     /* display: flexbox; */
     position: relative;
-    width: 30%;
+    width: 28%;
     height: 350px;
     background: var(--bg-color);
     box-sizing: border-box;
-    box-shadow: 0 0 2rem rgba(0,0,0,0.5);
+    box-shadow: 0 0 2rem rgba(71, 71, 71, 0.5);
     transition: 0.5s ease;
 }
 
@@ -519,6 +541,7 @@ span{
     margin-left: 2rem;
     margin-right: 2rem;
     font-size: 1.3rem;
+    text-align: justify;
 }
 
 .protfolio-box i{
@@ -538,6 +561,7 @@ span{
 /*------contact section design---------*/
 
 .contact h2{
+    margin-top: 10rem;
     margin-bottom: 7rem;
     text-align: center;
 }
@@ -583,7 +607,7 @@ span{
     height: 350px;
     box-sizing: border-box;
     background: var(--bg-color);
-    box-shadow: 0 0 2rem rgba(0,0,0,0.5);
+    box-shadow: 0 0 2rem rgb(197, 197, 197);
     border-radius: 2rem;
     margin-left: 10%;
 
