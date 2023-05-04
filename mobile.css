@@ -4,7 +4,7 @@
         display: block;
     }
 
-    #darkMode-icon {
+    #lightMode-icon {
         position: absolute;
         right: 7rem;
         font-size: 2.6rem;
@@ -132,8 +132,8 @@
     }
 
     .home-content h1 {
-        width: auto;
-        font-size: 3.2rem;
+        width: 48%;
+        font-size: 1.5rem;
     }
 
     .profession-container {
@@ -157,12 +157,11 @@
 
     .about-img img {
         width: 100%;
-        margin-top: -12rem;
     }
 
     .about-img {
         width: 100%;
-        margin-top: -10rem;
+        margin-top: 10rem;
     }
 
     /* education  */
